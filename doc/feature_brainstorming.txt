@@ -1,0 +1,37 @@
+Features that we want, in no particular order:
+
+- null should be an instance of Object, but special in that it can be assigned
+  to a variable of any type. This means it should be legal to call all of
+  Object's methods on null. Any other method would cause a
+  NullPointerException.
+
+- The constructior method would be a normal method. Right now, we'll call it
+  'init'. Constructors will be inherited.
+
+- super() should be able to be called at any point in a constructor.
+
+- Default accessibility of methods should be public, and member variables
+  should be private.
+
+- Members (variables and methods) must always be qualified with the Object they
+  are a member of. (eg. Even inside the object, you must say this.var or
+  this.method())
+
+- Types should be optional where it is unambiguous.
+
+- Inner classes should be proper closures. (No "can only see final variables")
+
+- Make inner classes less verbose and easier to use.
+
+- No checked exceptions.
+
+- Ability to catch more than one type of exception in a catch statement.
+
+- Have obj.attr automaticaly call obj.getAttr(), if that doesn't exist, fall
+  back to attempting to access obj.attr directly.
+
+- Have obj.attr = 1 automatically call obj.setAttr(1), if that doesn't exist,
+  fall back to attempting to access obj.attr directly.
+
+- Syntax to list the member variables of a class that should have getters
+  and/or setters automatically generated.
