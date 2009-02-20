@@ -35,3 +35,31 @@ Features that we want, in no particular order:
 
 - Syntax to list the member variables of a class that should have getters
   and/or setters automatically generated.
+
+- No Character literal.
+
+- [] should be able to index Strings, returning strings of length 1. Using it
+  as an lvalue would throw an exception.
+
+- [] should do get() and put() on Maps
+
+- [] should do get() and set() on Lists
+
+- Need to make it easier to use StringBuffer
+
+- No ++, --, and ?: operators 
+
+- Add +=, -= and ** operators
+
+- || should be 'or', && should be 'and', and ! should be 'not'
+
+- instanceof should be spelled instanceOf, and used as a method
+
+- ClassName should be the class object for ClassName, no need to do
+  ClassName.class
+
+- Constructors should be called as ClassName.new(), there is no new operator.
+
+- No Array literals. So we'll need an Array class with a constructor that takes
+  a size and the type of the elements and returns an Array of that type and
+  size.
